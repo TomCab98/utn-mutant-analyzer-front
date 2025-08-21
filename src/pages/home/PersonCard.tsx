@@ -30,7 +30,7 @@ const PersonCard = ({ person, onEdit, onDelete }: PersonCardProps) => {
           <div className="mt-2 mb-4">
           <table className="border border-gray-300 rounded-lg">
             <tbody>
-              {person.adn.map((row: string, rowIdx: number) => (
+              {(Array.isArray(person.adn) ? person.adn : person.adn.split('\n')).map((row: string, rowIdx: number) => (
                 <tr key={rowIdx}>
                   {row.split("").map((char, colIdx) => (
                     <td
