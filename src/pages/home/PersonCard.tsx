@@ -17,20 +17,37 @@ const PersonCard = ({ person, onEdit, onDelete }: PersonCardProps) => {
         <div
           className={`p-2 rounded-full font-bold text-xs ${
             person.isMutant
-              ? "bg-purple-200 text-purple-800"
-              : "bg-gray-200 text-gray-600"
+              ? "bg-red-200 text-red-800"
+              : "bg-purple-200 text-purple-600"
           }`}
         >
           {person.isMutant ? "Mutante" : "Humano"}
         </div>
       </div>
       <div className="space-y-2 text-gray-600">
-        <p className="flex items-center">
+        <p className="flex flex-col items-center justify-center w-full">
           <span className="font-semibold text-gray-800 mr-2">ADN:</span>
-          <span className="truncate">{person.adn}</span>
+          <div className="mt-2 mb-4">
+          <table className="border border-gray-300 rounded-lg">
+            <tbody>
+              {person.adn.map((row: string, rowIdx: number) => (
+                <tr key={rowIdx}>
+                  {row.split("").map((char, colIdx) => (
+                    <td
+                      key={colIdx}
+                      className="border px-2 text-center font-sans font-semibold text-lg "
+                    >
+                      {char}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
         </p>
       </div>
-      <div className="mt-6 pt-4 border-t border-gray-200 flex justify-end gap-2">
+      <div className="mt-6 pt-4 border-t border-gray-200 flex justify-center gap-2">
         <Button
           onClick={() => onEdit(person.id)}
           className="bg-gray-100 text-gray-700 hover:bg-gray-200 px-4 py-2 text-sm"
