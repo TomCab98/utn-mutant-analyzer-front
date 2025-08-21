@@ -1,0 +1,46 @@
+{
+  "persons": [
+    {
+      "id": 1,
+      "nombre": "Pedro",
+      "apellido": "Gómez",
+      "esMutante": true,
+      "adn": ["ATCAGT", "CAGTAC", "TTAGCT", "AGTCCA", "CTAGGA", "TCACTG"]
+    },
+    {
+      "id": 2,
+      "nombre": "Juan",
+      "apellido": "Perez",
+      "esMutante": true,
+      "adn": ["ATCAGT", "CAGTAC", "TTAGCT", "AGTCCA", "CTAGGA", "TCACTG"]
+    },
+    {
+      "id": 3,
+      "nombre": "Ricardo",
+      "apellido": "Ramirez",
+      "esMutante": true,
+      "adn": ["ATCAGT", "CAGTAC", "TTAGCT", "AGTCCA", "CTAGGA", "TCACTG"]
+    },
+    {
+      "id": 4,
+      "nombre": "Roman",
+      "apellido": "Martinez",
+      "esMutante": false,
+      "adn": ["ATCAGT", "CAGTAC", "TTAGCT", "AGTCCA", "CTAGGA", "TCACTG"]
+    },
+    {
+      "id": 5,
+      "nombre": "Martin",
+      "apellido": "Fernandez",
+      "esMutante": true,
+      "adn": ["ATCAGT", "CAGTAC", "TTAGCT", "AGTCCA", "CTAGGA", "TCACTG"]
+    },
+    {
+      "id": 6,
+      "nombre": "Nacho",
+      "apellido": "Hernandez",
+      "esMutante": false,
+      "adn": ["ATCAGT", "CAGTAC", "TTAGCT", "AGTCCA", "CTAGGA", "TCACTG"]
+    }
+  ]
+}
