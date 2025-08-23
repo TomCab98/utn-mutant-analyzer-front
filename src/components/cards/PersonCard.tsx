@@ -28,23 +28,23 @@ const PersonCard = ({ person, onEdit, onDelete }: PersonCardProps) => {
         <p className="flex flex-col items-center justify-center w-full">
           <span className="font-semibold text-gray-800 mr-2">ADN:</span>
           <div className="mt-2 mb-4">
-          <table className="border border-gray-300 rounded-lg">
-            <tbody>
-              {(Array.isArray(person.adn) ? person.adn : person.adn.split('\n')).map((row: string, rowIdx: number) => (
-                <tr key={rowIdx}>
-                  {row.split("").map((char, colIdx) => (
-                    <td
-                      key={colIdx}
-                      className="border px-2 text-center font-sans font-semibold text-lg "
-                    >
-                      {char}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+            <table className="border border-gray-300 rounded-lg">
+              <tbody>
+                {person.adn.map((row: string, rowIdx: number) => (
+                  <tr key={rowIdx}>
+                    {row.split("").map((char, colIdx) => (
+                      <td
+                        key={colIdx}
+                        className="border px-2 text-center font-sans font-semibold text-lg "
+                      >
+                        {char}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </p>
       </div>
       <div className="mt-6 pt-4 border-t border-gray-200 flex justify-center gap-2">

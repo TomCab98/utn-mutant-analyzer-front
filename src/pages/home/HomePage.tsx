@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import SearchBar from "./SearchBar";
-import PersonCard from "./PersonCard";
-import ConfirmModal from "./ConfirmModal";
 import type { Person } from "../../types/Person";
 import { deletePerson, getAllPersons } from "../../services/personService";
 import { useNavigate } from "react-router-dom";
+import SearchBar from "../../components/search-bar/SearchBar";
+import PersonCard from "../../components/cards/PersonCard";
+import ConfirmModal from "../../components/modal/ConfirmModal";
 
 const HomePage = () => {
   const [persons, setPersons] = useState<Person[]>([]);
@@ -44,9 +44,11 @@ const HomePage = () => {
 
   const confirmDelete = () => {
     if (personToDelete) {
-      deletePerson(personToDelete);
-      setShowModal(false);
-      setPersonToDelete(null);
+      deletePerson(personToDelete).then(() => {
+        setPersons((prev) => prev.filter((p) => p.id !== personToDelete));
+        setShowModal(false);
+        setPersonToDelete(null);
+      });
     }
   };
 

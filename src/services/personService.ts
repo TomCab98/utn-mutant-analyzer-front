@@ -1,5 +1,6 @@
 import type { PersonEntity } from "../types/entities/PersonEntity";
 import type { Person } from "../types/Person";
+import type { PersonFormData } from "../types/PersonFormData";
 import { apiFetch } from "../utils/apiFetch";
 import { toPerson, toPersonEntity } from "./personMapper";
 
@@ -13,12 +14,18 @@ export const getPersonById = async (id: string): Promise<Person> => {
   return toPerson(entity);
 };
 
-export const createPerson = async (
-  data: Omit<Person, "id">
-): Promise<Person> => {
+export const createPerson = async (data: PersonFormData): Promise<Person> => {
+  const developmentData: Partial<Person> = {};
+  if (import.meta.env.MODE === "development") {
+    developmentData.id = crypto.randomUUID();
+    developmentData.isMutant = Math.random() < 0.5;
+  }
+
   const entity = await apiFetch<PersonEntity>("/persons", {
     method: "POST",
-    body: JSON.stringify(toPersonEntity({ ...data, id: "" } as Person)),
+    body: JSON.stringify(
+      toPersonEntity({ ...data, ...developmentData } as Person)
+    ),
   });
   return toPerson(entity);
 };
