@@ -69,6 +69,34 @@
         "CTCTCT"
       ],
       "esMutante": true
+    },
+    {
+      "id": "a9f01ddb-be32-4edd-ace5-6b3c6831bd27",
+      "nombre": "Pepe",
+      "apellido": "Honguito",
+      "adn": [
+        "ACTCAG",
+        "ACTAGA",
+        "AAAACT",
+        "AGATTG",
+        "ATTATA",
+        "CTGACC"
+      ],
+      "esMutante": true
+    },
+    {
+      "id": "3ee14ecc-b45b-48e0-aca6-8bfd96778335",
+      "nombre": "Marcos",
+      "apellido": "Tunel",
+      "adn": [
+        "ACTAGA",
+        "CTAGGT",
+        "TAGCCC",
+        "CCAGTC",
+        "CAGTCA",
+        "TGACGA"
+      ],
+      "esMutante": true
     }
   ]
 }
