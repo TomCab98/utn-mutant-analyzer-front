@@ -1,0 +1,70 @@
+.doc-container {
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 80%;
+}
+
+.doc-title {
+  color: #1e293b;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.doc-section-title {
+  color: #334155;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.doc-text {
+  color: #475569;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  font-weight: lighter;
+}
+
+.doc-olist {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+  list-style-type: decimal; 
+  font-weight: bold;
+}
+
+.doc-img {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.doc-ulist {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+  list-style-type: disc; 
+  font-weight: bold;
+}
+
+.doc-sublist {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+  list-style-type: circle; 
+}
+
+.doc-code {
+  background: #1e293b;
+  color: #f1f5f9;
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
