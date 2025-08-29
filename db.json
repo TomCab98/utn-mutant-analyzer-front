@@ -1,20 +1,6 @@
 {
   "persons": [
     {
-      "id": "2",
-      "nombre": "Juan",
-      "apellido": "Perez",
-      "esMutante": true,
-      "adn": [
-        "ATCAGT",
-        "CAGTAC",
-        "TTAGCT",
-        "AGTCCA",
-        "CTAGGA",
-        "TCACTG"
-      ]
-    },
-    {
       "id": "3",
       "nombre": "Ricardo",
       "apellido": "Ramirez",
@@ -57,18 +43,60 @@
       ]
     },
     {
-      "id": "6",
-      "nombre": "Nacho",
-      "apellido": "Hernandez",
-      "esMutante": false,
+      "id": "9db30c79-91d7-42be-b801-de0c84920818",
+      "nombre": "Joaco",
+      "apellido": "Cat",
       "adn": [
-        "ATCAGT",
-        "CAGTAC",
-        "TTAGCT",
-        "AGTCCA",
-        "CTAGGA",
-        "TCACTG"
-      ]
+        "AAAAAA",
+        "AAAAAA",
+        "AAAAAA",
+        "AAAAAA",
+        "AAAAAA",
+        "AAAAAA"
+      ],
+      "esMutante": true
+    },
+    {
+      "id": "b858dd10-d020-4cf0-97a1-9385f39cbaf7",
+      "nombre": "Roman",
+      "apellido": "Astoga",
+      "adn": [
+        "ACACAC",
+        "ACAGAG",
+        "AGATAT",
+        "ATATAT",
+        "TTTCCT",
+        "CTCTCT"
+      ],
+      "esMutante": true
+    },
+    {
+      "id": "a9f01ddb-be32-4edd-ace5-6b3c6831bd27",
+      "nombre": "Pepe",
+      "apellido": "Honguito",
+      "adn": [
+        "ACTCAG",
+        "ACTAGA",
+        "AAAACT",
+        "AGATTG",
+        "ATTATA",
+        "CTGACC"
+      ],
+      "esMutante": true
+    },
+    {
+      "id": "3ee14ecc-b45b-48e0-aca6-8bfd96778335",
+      "nombre": "Marcos",
+      "apellido": "Tunel",
+      "adn": [
+        "ACTAGA",
+        "CTAGGT",
+        "TAGCCC",
+        "CCAGTC",
+        "CAGTCA",
+        "TGACGA"
+      ],
+      "esMutante": true
     }
   ]
 }
