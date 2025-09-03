@@ -1,7 +1,7 @@
 import type { PersonEntity } from "../types/entities/PersonEntity";
 import type { Person } from "../types/Person";
 import type { PersonFormData } from "../types/PersonFormData";
-import { apiFetch } from "../utils/apiFetch";
+import { apiFetch } from "../utils/api-fetch.ts";
 import { toPerson, toPersonEntity } from "./personMapper";
 
 export const getAllPersons = async (): Promise<Person[]> => {

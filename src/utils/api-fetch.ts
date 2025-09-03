@@ -16,5 +16,5 @@ export async function apiFetch<T>(
     throw new Error(`Error ${response.status}: ${errorText}`);
   }
 
-  return response.json() as Promise<T>;
+  return response.json();
 }
